@@ -1,17 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hanyue Zhang</title>
-</head>
-<body>
-    <h1>zhan0611</h1>
-    <h2>mtm6201</h2>
-    <h3>Assignment 1</h3>
-    <h4>I'm from China!</h4>
 
-    
+<head>
+  <meta charset="UTF-8">
+ 
+  <title>Flexbox Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="main" class="main">
+        <header class="header">
+        <img class="header-image" src="images/logo/logo.png" alt srcset>
+        </header>
+
+       <section class="intro">
+
+          <div id="intro-text" class="intro-text">
+              <h1 class="frist"> Want to be your own boss? </h1>
+              <p class="second">  Start today and make up to $30/hr driving yours own vehcle with Dash! </p>
+             </div>
+             <div class="intro-image">
+                <img src=" images/bg-image/scooter.svg  " alt="intro-image" srcset="intro-image">
+             </div>
+         
+
+         <form id="ApplyNow" class="ApplyNow" method="get">
+           <footer id="apply" class="apply"> 
+             <h2>Apply Now</h2>
+             <p>Enter your info below to get started.</p>
+          </footer>
+              <label for="firstName" ></label>
+              <input type="text" name="firstName" id="firstName" placeholder="First name" required autofocus>
+          </div>
+          <div>
+              <label for="lastName"></label>
+              <input type="text" name="lastName" id="lastName" placeholder="Last name" required autofocus> 
+          </div>
+          <div>
+              <label for="email"></label>
+              <input type="email" name="em" id="em" placeholder="Email address" required autofocus>
+          </div>
+          <div>
+              <label for="phone"></label>
+              <input type="text" name="ph" id="ph" placeholder="Phone number" required autofocus>
+          </div>
+          <div>
+              <label for="agree">I agree to dash terms<input type="checkbox" name="agree" id="agree"></label>
+          </div>
+          <div>
+              <button type="submit" class="submit" >DRIVE WITH US</button>
+          </div>
+          <footer id="already" class="already">
+              Already applied?
+              <a class="website-link" href=" https://candyfunhouse.ca/ ">
+                  Check your application status here
+              </a >
+           </footer>
+         </form>
+
+       </section>
+       <footer>
+          <footer id="foot" class="foot">
+              <p id="first" class="first">See how much you can earn with Dash.</p >
+              <p id="second" class="second">how many hours do you want to drive with us this week?</p >
+              <div>
+                  <label for="hours"></label>
+                  <input type="text" name="hours" id="hours" placeholder="Hours" required autofocus>
+              </div>
+              <div>
+                  <label for="city"></label>
+                  <input type="text" name="city" id="city" placeholder="City" required autofocus>
+              </div>
+              <div>
+                  <button type="submit" id="ca" class="ca" >CALCULATE</button>
+              </div>
+              <div id="icons" class="icons">
+                  <img class="ins" src="images/icons/instagram.svg" alt="I">
+                  <img class="twitter" src="images/icons/twitter.svg" alt="T">
+                  <img class="facebook" src="images/icons/facebook.svg" alt="F">
+                  <img class="in" src="images/icons/linkedin.svg" alt="in">
+              </div>
+          </footer>
+            
+      </footer>
+
+
+  
+    </main>
 </body>
-</html>
