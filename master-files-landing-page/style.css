@@ -1,0 +1,126 @@
+body{ 
+    background: #f7f7ff url(../master-files-landing-page/images/bg-image/scooter.svg); 
+    background-repeat:no-repeat;
+    background-position:center;
+    margin: 0 auto;
+    background-size: auto auto;
+      
+
+    
+}
+
+.intro-image{
+   background-position:center;
+    background-repeat:no-repeat;
+    padding:10% ;
+
+}
+
+.header-image{
+   text-align: left;
+    width:5%;
+    padding:1% 3% ;
+   
+}
+
+.intro-text{
+    float: left; 
+    width:25%;
+    
+    font-family: 'Montserrat', sans-serif;
+  
+
+    padding: 0;
+}
+
+.frist{
+   font-size: 3.5rem;
+   font-weight: bold;
+}
+
+.second{
+    font-size:0.5rem;
+}
+
+.ApplyNow{
+    margin-right: auto;
+    float:right;
+    width:25% ;
+    height:40% ;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    padding:5px 15px;
+    text-align: left;
+    border-radius:14px 14px;
+    box-shadow: 2px 2px 6px #666;
+
+
+
+}
+.submit{
+    background: #57eeab;
+    width:100%;
+}
+.website-link{
+    color: #ff8480;
+}
+
+.foot{
+    font-family: 'Montserrat', sans-serif; 
+    background-color:#fffd8c;
+    width:100%;
+    height:200px;
+    position:fixed;
+    bottom:0px;
+   
+
+}
+.ca{
+    background-color: #ff8480;
+    color: #f7f7ff;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+
+}
+.foot.frist{
+    font-weight: bold;
+}
+.icons{
+    float: right; 
+
+ 
+    
+}
+
+
+@media (max-width: 800px){
+   
+
+    .intro-text{
+        flex-basis: 50%;
+
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-content: center;
+       padding: 10px 20px;
+       width:60%;
+    }
+
+    .ApplyNow{
+        display: flex;
+        flex-basis: 50%;
+        order: 1;
+        display: block;
+        width: 50%;
+        height:50px;
+        float: left;
+    
+  
+       background-color: white;
+      
+       box-shadow: 2px 2px 6px #666;
+
+    }
+
+}
