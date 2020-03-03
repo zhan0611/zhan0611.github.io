@@ -1,0 +1,6 @@
+.content_warp{width: 1200px;margin: 0 auto;padding: 40px 0;}
+.content_warp input{display: block;width: 90%;height: 50px;font-size: 18px;padding-left:10px ;outline: none;}
+.content_warp input+input{margin-top:0.9375rem;}
+.content_warp textarea{width: 90%;margin-top: 15px;padding-left:10px ;font-size: 18px;outline: none;}
+.btn{padding: 10px 20px;outline: none;background: #fff;color: #636363;border: 1px solid #ccc;}
+.btn:hover{background: #636363;color: #fff;}
