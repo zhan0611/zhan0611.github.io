@@ -1,0 +1,329 @@
+.header {
+	width: 100%;
+	height: 76px;
+	display: block;
+	border: none;
+}
+
+.footer {
+	width: 100%;
+	height: 126px;
+	display: block;
+	border: none;
+}
+
+.discover {
+	padding: 116px 140px;
+}
+
+.discover>img {
+	width: 950px;
+	height: auto;
+}
+
+.discover-title {
+	font-size: 52px;
+	padding-bottom: 50px;
+}
+
+.discover-left {
+	width: 536px;
+}
+
+.discover-cont {
+	font-size: 22px;
+}
+
+.discover-iconBox {
+	text-align: center;
+	padding: 60px 0;
+}
+
+.discover-get {
+	width: 340px;
+	height: 70px;
+	background-color: #26a683;
+	border-radius: 60px;
+	color: #fff;
+	font-size: 34px;
+	font-weight: bold;
+	box-shadow: 0 10px 12px #888888;
+}
+
+.discover-down {
+	text-align: center;
+	font-size: 12px;
+}
+
+.discover-down img {
+	transform: rotate(180deg);
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.college {
+	padding: 84px 140px;
+	background-color: #f2f2f2;
+	align-items: flex-start;
+}
+
+.college>img {
+	width: 814px;
+	height: 337px;
+	object-fit: cover;
+}
+
+.college-title {
+	font-style: italic;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.college-title2 {
+	font-size: 30px;
+	color: #999;
+}
+
+.college-right {
+	width: 792px;
+}
+
+.college-cont {
+	line-height: 34px;
+	padding-top: 10px;
+}
+
+.college-btn {
+	width: 230px;
+	height: 46px;
+	background-color: #26a683;
+	border-radius: 60px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	box-shadow: 0 10px 12px #888888;
+	float: right;
+	margin-top: 80px;
+}
+
+.information {
+	padding: 30px 140px;
+	background-color: #3c3b39;
+	color: #fff;
+	font-size: 20px;
+}
+
+.information-pic {
+	width: 176px;
+	height: 176px;
+	border-radius: 50%;
+	border: 6px solid #fff;
+}
+
+.information-cont {
+	width: 1088px;
+}
+
+.information-person>div {
+	padding-left: 100px;
+}
+
+.college-leftImg {
+	display: none;
+}
+
+
+
+/* 668px<设备高度<1024px  pad端*/
+@media only screen and (min-width: 668px) and (max-width: 1024px) {
+	.header {
+		height: 76px;
+	}
+
+	.discover {
+		display: block;
+		padding: 98px 80px 10px 80px;
+	}
+
+	.discover>img {
+		width: 350px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.discover-get {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	.discover-down>img {
+		width: 28px;
+		height: auto;
+		margin-top: 0;
+	}
+
+	.college {
+		padding: 0;
+		display: block;
+	}
+
+	.college>img {
+		width: 100%;
+		height: 200px;
+	}
+
+	.college-right {
+		width: 100%;
+		background-color: #fff;
+		padding: 50px 80px;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.college-btn {
+		margin-top: 20px;
+	}
+
+	.information {
+		padding: 40px 80px;
+	}
+
+	.information-cont {
+		width: 375px;
+		line-height: 30px;
+	}
+
+	.information-person {
+		display: block;
+		text-align: center;
+	}
+
+	.information-person>div {
+		padding-left: 0;
+	}
+
+	.college-leftImg {
+		display: block;
+	}
+
+	.college-rightImg {
+		display: none;
+	}
+}
+
+/* 设备高度<668  手机端*/
+@media only screen and (max-width: 668px) {
+	.header {
+		height: 218px;
+	}
+
+	.discover {
+		display: block;
+		padding: 35px 40px;
+	}
+
+	.discover-left {
+		width: 300px;
+	}
+
+	.discover-title {
+		font-size: 30px;
+	}
+
+	.discover-cont {
+		font-size: 20px;
+		line-height: 36px;
+	}
+
+	.discover-iconBox {
+		display: block;
+		overflow: hidden;
+		padding: 30px 0;
+	}
+
+	.discover-iconBox>div {
+		float: left;
+		width: 110px;
+	}
+
+	.discover-iconBox>div:nth-child(2n+1) {
+		margin-right: 70px;
+	}
+
+	.discover>img {
+		width: 300px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.discover-get {
+		width: 300px;
+		height: 50px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	.discover-down {
+		display: none;
+	}
+
+	.college {
+		padding: 0;
+		display: block;
+	}
+
+	.college-title {
+		font-size: 24px;
+	}
+
+	.college-title2 {
+		font-size: 22px;
+	}
+
+	.college>img {
+		width: 100%;
+		height: 200px;
+	}
+
+	.college-right {
+		width: 100%;
+		background-color: #fff;
+		padding: 38px;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.college-btn {
+		width: 145px;
+		height: 45px;
+		margin-top: 20px;
+	}
+
+	.information {
+		padding: 30px 38px;
+		display: block;
+	}
+
+	.information-cont {
+		width: 300px;
+		line-height: 30px;
+		font-size: 16px;
+	}
+
+	.information-person {
+		display: block;
+		text-align: center;
+	}
+
+	.information-person>div {
+		padding: 10px 0;
+	}
+
+	.college-leftImg {
+		display: block;
+	}
+
+	.college-rightImg {
+		display: none;
+	}
+}

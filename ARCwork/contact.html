@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/contact.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	</head>
+	<body>
+		<iframe id="header" class="header" src="header.html"></iframe>
+
+		<div class="contact flex-between animated fadeInUp">
+			<div class="contact-left">
+				<div class="contact-left-title">We Want to Hear From You</div>
+				<div class="contact-left-cont">If you have an idea for an activity that you think you and your fellow students
+					wouldlove to participate in that we are not already offering, we want to know about it!</div>
+				<img src="img/images/contact-img.svg">
+			</div>
+			<div class="contact-right">
+				<div class="contact-right-title">
+					Contact us.
+				</div>
+				<div>
+					<div class="contact-right-iptName">Full Name</div>
+					<input class="contact-right-ipt" type="text" placeholder="Full Name" />
+				</div>
+				<div>
+					<div class="contact-right-iptName">Student Number</div>
+					<input class="contact-right-ipt" type="text" placeholder="Student Number" />
+				</div>
+				<div>
+					<div class="contact-right-iptName">Email</div>
+					<input class="contact-right-ipt" type="text" placeholder="Email" />
+				</div>
+				<div>
+					<div class="contact-right-iptName">Message</div>
+					<textarea class="contact-right-textarea" placeholder="Message"></textarea>
+				</div>
+				<div class="contact-right-btnBox flex">
+					<div class="contact-right-btn flex-center">Submit</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact flex-between">
+			<div class="contact-left">
+				<div class="contact-left-title">Our Location.</div>
+				<div class="contact-left-title2">Algonquin College Students' Association</div>
+				<div class="contact-left-cont2">Monday to Friday - 8:30am to 6:00pm13</div>
+				<div class="contact-left-cont2">85 Woodroffe Avenue (E114)</div>
+				<div class="contact-left-cont2">Ottawa, Ontario</div>
+				<div class="contact-left-cont2">K2G 1V8</div>
+				<div class="contact-left-cont2">(613) 727-4723 x7711</div>
+
+			</div>
+			<div class="contact-map" id="allmap">
+
+			</div>
+		</div>
+
+		<iframe class="footer" src="footer.html"></iframe>
+		
+		<div class="toTop" id="toTop">
+			<img src="img/icons/arrow.svg">
+			<div>back to top</div>
+		</div>
+
+		<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=UQeSPpkvvDMOydiSiwEIoY87kUz1WP4G"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				document.querySelector("#header").contentWindow.document.querySelectorAll('.nav div')[2].className = 'active';
+				
+				document.querySelector("#toTop").onclick = function() {
+					document.body.scrollIntoView({
+						behavior: 'smooth', //平滑滚动，爽，其他还有 instant
+						block: 'start' //元素到页面顶部，其他还有 end, center
+					})
+				}
+				
+				
+				// 百度地图API功能
+				var map = new BMap.Map("allmap"); // 创建Map实例
+				map.centerAndZoom(new BMap.Point(116.404, 39.915), 11); // 初始化地图,设置中心点坐标和地图级别
+				//添加地图类型控件
+				map.addControl(new BMap.MapTypeControl({
+					mapTypes: [
+						BMAP_NORMAL_MAP,
+						BMAP_HYBRID_MAP
+					]
+				}));
+				map.setCurrentCity("北京"); // 设置地图显示的城市 此项是必须设置的
+				map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+				
+				var point = new BMap.Point(116.404, 39.915);
+				map.centerAndZoom(point, 15);
+				var marker = new BMap.Marker(point); // 创建标注    
+				map.addOverlay(marker); // 将标注添加到地图中 
+			}
+			
+		</script>
+	</body>
+</html>

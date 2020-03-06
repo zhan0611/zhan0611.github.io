@@ -1,0 +1,42 @@
+.footer{
+	height: 126px;
+	background-color: #3c3b39;
+	position: relative;
+}
+.follow{
+	text-align: center;
+	color: #fff;
+	padding-bottom: 10px;
+}
+.logoBox img{
+	padding: 0 4px;
+}
+.toTop{
+	position: absolute;
+	right: 20px;
+	text-align: center;
+	color: #fff;
+}
+.toTop img{
+	width: 50px;
+	height: auto;
+}
+/* 668px<设备高度<1024px  pad端*/
+@media only screen and (min-width: 668px) and (max-width: 1024px) {
+	.toTop{
+		font-size: 8px;
+	}
+	.toTop img{
+		width: 22px;
+	}
+}
+
+/* 设备高度<668  手机端*/
+@media only screen and (max-width: 668px) {
+	.toTop{
+		font-size: 8px;
+	}
+	.toTop img{
+		width: 22px;
+	}
+}
