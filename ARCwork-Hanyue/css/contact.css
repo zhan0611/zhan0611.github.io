@@ -1,0 +1,170 @@
+.header {
+	width: 100%;
+	height: 76px;
+	display: block;
+	border: none;
+}
+
+.footer {
+	width: 100%;
+	height: 126px;
+	display: block;
+	border: none;
+}
+
+.contact{
+	padding: 160px 140px;
+}
+.contact-left{
+    width:100%;
+}
+.contact-left img{
+	width: 726px;
+	height: auto;
+}
+.contact-left-title{
+	font-size: 52px;
+	font-weight: bold;
+}
+.contact-left-cont{
+	padding: 46px 0;
+	font-size: 22px;
+}
+.contact-right{
+	width: 630px;
+	height: 800px;
+	background-color: #26a683;
+	border-radius: 20px;
+	box-shadow: 6px 10px 10px #aaa;
+	padding: 30px 46px;
+	box-sizing: border-box;
+	color: #fff;
+}
+.contact-right-title{
+	font-size: 58px;
+	font-weight: bold;
+}
+.contact-right-iptName{
+	font-size: 20px;
+	padding: 24px 0;
+}
+.contact-right-ipt{
+	width: 100%;
+	height: 50px;
+	border-radius: 50px;
+	outline: none;
+	border: none;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+.contact-right-textarea{
+	width: 100%;
+	height: 150px;
+	border-radius: 20px;
+	outline: none;
+	overflow: hidden;
+	padding: 20px;
+	box-sizing: border-box;
+	resize: none;
+}
+.contact-right-btn{
+	width: 212px;
+	height: 68px;
+	border-radius: 50px;
+	background-color: #3c3b39;
+	box-shadow: 0 10px 10px #666;
+	font-size: 30px;
+}
+.contact-right-btnBox{
+	justify-content: flex-end;
+	padding-top: 10px;
+}
+.contact-left-title2{
+	font-size: 38px;
+}
+.contact-left-cont2{
+	padding-top: 20px;
+	font-size: 18px;
+}
+.contact-map{
+	width: 814px;
+	height: 500px;
+}
+
+/* 668px<设备高度<1024px  pad端*/
+@media only screen and (min-width: 668px) and (max-width: 1400px) {
+	.header {
+		height: 76px;
+	}
+	.contact{
+		padding: 0;
+		display: block;
+	}
+	.contact-left{
+		width: 100%;
+		padding: 46px 80px;
+		box-sizing: border-box;
+	}
+	.contact-left img{
+		width: 456px;
+		display: block;
+		margin: 0 auto;
+	}
+	.contact-right{
+		margin: 0 auto;
+	}
+	.contact-map{
+		padding:50px 60px;
+	}
+}
+
+/* 设备高度<668  手机端*/
+@media only screen and (max-width: 668px) {
+	.header {
+		height: 218px;
+	}
+	.contact{
+		padding: 0;
+		display: block;
+	}
+	.contact-left{
+		width: 100%;
+		padding: 36px;
+		box-sizing: border-box;
+	}
+	.contact-right{
+		width: 306px;
+		padding: 30px 15px;
+		margin: 0 auto;
+		height: auto;
+	}
+	.contact-right-iptName{
+		padding: 18px 0 6px 0;
+	}
+	.contact-right-btnBox{
+		padding-top: 30px;
+	}
+	.contact-right-btn{
+		width: 270px;
+		height: 52px;
+	}
+	.contact-left-title{
+		font-size: 30px;
+	}
+	.contact-left-title2{
+		font-size: 24px;
+		padding-top: 10px;
+	}
+	.contact-left img{
+		width: 300px;
+		display: block;
+		margin: 0 auto;
+	}
+	.contact-map{
+		padding:20px 20px;
+	
+	}
+	.contact-right-title{
+		font-size: 30px;
+	}
+}
