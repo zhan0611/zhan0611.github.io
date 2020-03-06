@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.flex{
+	display: flex;
+	align-items: center;
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex-between{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-around{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.fs-16{
+	font-size: 16px;
+}
+.fs-20{
+	font-size: 20px;
+}
+
+.toTop{
+	position: fixed;
+	right: 20px;
+	bottom: 3%;
+	text-align: center;
+	color: #fff;
+}
+.toTop img{
+	width: 50px;
+	height: auto;
+}

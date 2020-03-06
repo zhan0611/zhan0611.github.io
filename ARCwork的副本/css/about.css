@@ -1,0 +1,356 @@
+.header {
+	width: 100%;
+	height: 76px;
+	display: block;
+	border: none;
+}
+
+.footer {
+	width: 100%;
+	height: 126px;
+	display: block;
+	border: none;
+}
+
+.discover {
+	padding: 116px 140px;
+}
+
+.discover>img {
+	width: 826px;
+	height: auto;
+}
+
+.discover-title {
+	font-size: 52px;
+	padding-bottom: 50px;
+}
+
+.discover-left {
+	width: 780px;
+}
+
+.discover-cont {
+	font-size: 20px;
+	padding-bottom: 40px;
+}
+
+
+.bannerTitle {
+	width: 100%;
+	height: 256px;
+	background: url(../img/images/about.jpg) center / 100% rgba(0, 0, 0, 0.5);
+	background-blend-mode: multiply;
+	color: #fff;
+	font-size: 54px;
+}
+
+.contBox {
+	padding: 230px 140px;
+}
+
+.contBox>div {
+	width: 490px;
+}
+
+.contBox-title {
+	font-size: 32px;
+	font-style: italic;
+}
+
+.contBox-cont {
+	font-size: 14px;
+	line-height: 30px;
+	width:80%;
+}
+
+.services {
+	background-image: url(../img/images/services.jpg);
+}
+
+.college {
+	padding: 84px 140px;
+	background-color: #f2f2f2;
+	align-items: flex-start;
+}
+
+.college>img {
+	width: 814px;
+	height: 337px;
+	object-fit: cover;
+}
+
+.college-title {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.college-title2 {
+	font-size: 30px;
+	color: #999;
+}
+
+.college-right {
+	width: 792px;
+}
+
+.college-cont {
+	line-height: 34px;
+	padding-top: 10px;
+}
+
+.college-btn {
+	width: 230px;
+	height: 46px;
+	background-color: #26a683;
+	border-radius: 60px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	box-shadow: 0 10px 12px #888888;
+	float: right;
+	margin-top: 80px;
+}
+
+
+.college-leftImg {
+	display: none;
+}
+
+.subscribe {
+	background-color: #3c3b39;
+	color: #fff;
+	height: 100px;
+}
+
+.subscribe-btn {
+	width: 224px;
+	height: 46px;
+	background-color: #26a683;
+	border-radius: 40px;
+	margin-left: 20px;
+}
+
+.logosBox {
+	padding: 140px;
+}
+
+.logosBox-title {
+	font-size: 70px;
+	text-align: center;
+}
+
+.logosBox img {
+	width: auto;
+	height: 130px;
+}
+
+/* 668px<设备高度<1024px  pad端*/
+@media only screen and (min-width: 668px) and (max-width: 1024px) {
+	.header {
+		height: 76px;
+	}
+
+	.discover {
+		display: block;
+		padding: 98px 80px 10px 80px;
+	}
+
+	.discover-left {
+		width: 610px;
+	}
+
+	.discover>img {
+		width: 578px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.discover-get {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	.discover-down>img {
+		width: 28px;
+		height: auto;
+		margin-top: 0;
+	}
+
+	.discover-title {
+		font-weight: bold;
+	}
+
+	.bannerTitle {
+		height: 200px;
+		margin-top: 20px;
+	}
+
+	.contBox {
+		padding: 50px 80px;
+		display: block;
+	}
+
+	.contBox>div {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+	.college {
+		padding: 64px 80px;
+	}
+
+	.college>img {
+		width: 220px;
+		height: 378px;
+	}
+
+	.college-right {
+		width: 372px;
+	}
+
+	.subscribe-1 {
+		font-size: 24px !important;
+	}
+
+	.subscribe-btn {
+		width: 142px;
+		height: 46px;
+	}
+
+	.logosBox {
+		padding: 70px 0;
+		text-align: center;
+	}
+
+	.logosBox-cont,
+	.logosBox-cont img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.logosBox-cont img {
+		margin-bottom: 30px;
+	}
+
+	.logosBox-title {
+		font-weight: bold;
+	}
+}
+
+/* 设备高度<668  手机端*/
+@media only screen and (max-width: 668px) {
+	.header {
+		height: 218px;
+	}
+
+	.discover {
+		display: block;
+		padding: 34px;
+	}
+
+	.discover-left {
+		width: 100%;
+	}
+
+	.discover>img {
+		width: 306px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.discover-get {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	.discover-down>img {
+		width: 28px;
+		height: auto;
+		margin-top: 0;
+	}
+
+	.discover-title {
+		font-weight: bold;
+	}
+
+	.bannerTitle {
+		height: 200px;
+		margin-top: 20px;
+	}
+
+	.contBox {
+		padding: 30px;
+		display: block;
+	}
+
+	.contBox-title {
+		font-weight: bold;
+	}
+
+	.contBox>div {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+	.college {
+		padding: 32px 38px;
+	}
+
+	.college>img {
+		display: none;
+	
+	}
+
+	.college-right {
+		width: 372px;
+	}
+
+	.college-title2 {
+		font-size: 24px;
+	}
+
+	.subscribe>div {
+		display: block;
+	}
+
+	.subscribe-1 {
+		font-size: 18px !important;
+	}
+
+	.subscribe-btn {
+		width: 140px;
+		height: 36px;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+
+	.logosBox-title {
+		font-size: 54px;
+	}
+
+	.logosBox {
+		padding: 0;
+		padding-top: 70px;
+		text-align: center;
+	}
+
+	.logosBox img {
+		height: 88px;
+		width: auto;
+	}
+
+	.logosBox-cont,
+	.logosBox-cont img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.logosBox-cont img {
+		margin-bottom: 30px;
+	}
+
+	.logosBox-title {
+		font-weight: bold;
+	}
+}
