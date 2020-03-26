@@ -1,0 +1,25 @@
+body {
+    padding-top: 100px;
+  }
+  
+  .col, [class*="col-"] {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    counter-increment: column;
+    background-color: #d1ecf1;
+    border: 2px solid white;
+    color: #0c5460;
+    
+  }
+  
+  .col::before, [class*="col-"]::before {
+    content: counter(column);
+  }
+  .button{
+    justify-content: right;
+    align-content: right;
+  }
+
+  
