@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>baking</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=nSxiPohfziUaCuONe4ViUP2N"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="img/header.png" >
+			</div>
+			<div class="navs">
+				<div class="row">
+					<div class="col-lg-2 col-xs-12">
+						<a href="about.html">Delicious cake</a>
+					</div>
+					<div class="col-lg-2 col-xs-12">
+						<a href="about.html">Hard bread</a>
+					</div>
+					<div class="col-lg-2 col-xs-12">
+						<a href="about.html">soft bread</a>
+					</div>
+					<div class="col-lg-2 col-xs-12">
+						<a href="about.html">Soft meal bag</a>
+					</div>
+					<div class="col-lg-2 col-xs-12">
+						<a href="about.html">Sweet bread</a>
+					</div>
+					<div class="col-lg-2 col-xs-12">
+						<a href="about.html">pepper cake</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<div class="content">
+			<div class="content_warp clearfix">
+				<div class="col-lg-6">
+					<input type="text" placeholder="Please enter your name"/>
+					<input type="text" placeholder="Please enter your phone number"/>
+					<input type="text" placeholder="Please enter your address"/>
+					<textarea cols="30" rows="10" placeholder="Please enter comments"></textarea> 	
+					<div class="text-left">
+						<button type="button" class="btn">Submit</button>
+					</div>
+				</div>
+				<div class="col-lg-6"  id="map" style="height:600px;border:#ccc solid 1px;font-size:12px"></div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<!-- <div class="footer_nav">
+				
+			</div> -->
+			<div class="foot">
+				<p class="text-center" style="font-size: 26px;font-weight: bold;">We want to hear from you</p>
+				<div class="warp clearfix">
+					<div class="col-lg-3 col-xs-12">
+						<p class="title"><a href="index.html">Home</a></p>
+						<p>Member Center</p>
+						<p>Business cooperation</p>
+						<p>Friendship link</p>
+					</div>
+					<div class="col-lg-3 col-xs-12">
+						<p class="title"><a href="about.html">About us</a></p>
+						<p>Shopping Mall</p>
+						<p>Baking video</p>
+						<p>Baking data</p>
+					</div>
+					<div class="col-lg-3 col-xs-12">
+						<p class="title"><a href="contact.html">Cantct us</a></p>
+						<p>Company address</p>
+						<p>Contact information</p>
+					</div>
+					<div class="col-lg-3 col-xs-12">
+						<p class="title"><a href="">Our Bakery</a></p>
+						<p>Email.  3426600472@qq.com</p>
+						<p>Tel.  123-456-7890</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			 //创建和初始化地图函数：
+			    function initMap(){
+			      createMap();//创建地图
+			      setMapEvent();//设置地图事件
+			      addMapControl();//向地图添加控件
+			      addMapOverlay();//向地图添加覆盖物
+			    }
+			    function createMap(){ 
+			      map = new BMap.Map("map"); 
+			      map.centerAndZoom(new BMap.Point(-75.692012,45.425822),15);
+			    }
+			    function setMapEvent(){
+			      map.enableScrollWheelZoom();
+			      map.enableKeyboard();
+			      map.enableDragging();
+			      map.enableDoubleClickZoom()
+			    }
+			    function addClickHandler(target,window){
+			      target.addEventListener("click",function(){
+			        target.openInfoWindow(window);
+			      });
+			    }
+			    function addMapOverlay(){
+			    }
+			    //向地图添加控件
+			    function addMapControl(){
+			      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+			      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+			      map.addControl(scaleControl);
+			      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+			      map.addControl(navControl);
+			      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+			      map.addControl(overviewControl);
+			    }
+			    var map;
+			      initMap();
+		</script>
+	</body>
+</html>

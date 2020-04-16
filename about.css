@@ -1,0 +1,11 @@
+.content_warp img{width: 100%;}
+.content_warp{width: 1200px;margin: 0 auto;padding-top: 35px;}
+.content_text{padding: 0 15px;font-size: 18px;margin: 15px 0 25px;}
+.info{font-size: 16px;}
+.info p:nth-child(1){font-size: 22px;font-weight: bold;}
+table{width: 100%;margin-bottom: 20px;}
+th{height: 50px;text-align: center;width: 10%;}
+@media screen and (max-width:767px) {
+	.content_warp{width: 100%;}
+}
+.imgrow div{margin-bottom: 15px;}
