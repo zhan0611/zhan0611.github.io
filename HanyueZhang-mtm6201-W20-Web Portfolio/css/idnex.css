@@ -1,0 +1,9 @@
+.content_warp{width: 1200px;margin: 0 auto;padding: 20px 0 20px;}
+.content_warp .item img{width: 100%;}
+.content_warp .item{margin-bottom: 15px;}
+@media screen and (max-width:767px) {
+	.content_warp{width: 100%;}
+}
+.content .title{font-size: 18px;font-weight: bold;margin: 3px 0 5px;}
+.mixed{color: #999;}
+.content_warp .item:hover{cursor: pointer;}
